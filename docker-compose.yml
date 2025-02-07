@@ -97,6 +97,16 @@ services:
     networks:
       - backend
 
+  weatherapiapi:
+    image: ${DOCKER_REGISTRY-}weatherapiapi
+    build:
+      context: .
+      dockerfile: WeatherAPIAPI/Dockerfile
+    ports:
+      - "8081:8080"
+    networks:
+      - backend
+
 volumes:
   pgadmin-data:
   news-data:
