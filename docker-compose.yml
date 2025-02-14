@@ -107,6 +107,12 @@ services:
     networks:
       - backend
 
+  apigateway:
+    image: ${DOCKER_REGISTRY-}apigateway
+    build:
+      context: .
+      dockerfile: APIGateway/APIGateway/Dockerfile
+
 volumes:
   pgadmin-data:
   news-data:
@@ -116,3 +122,4 @@ networks:
     driver: bridge
   backend:
     driver: bridge
+

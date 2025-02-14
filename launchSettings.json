@@ -5,7 +5,8 @@
       "commandVersion": "1.0",
       "serviceActions": {
         "newsapi": "StartDebugging",
-        "weatherapiapi": "StartDebugging"
+        "weatherapiapi": "StartDebugging",
+        "apigateway": "StartDebugging"
       }
     }
   }
